@@ -1,0 +1,41 @@
+# Downloaded scientific datasets. Keep source, license, and download notes.
+/workshop/data/**
+!/workshop/data/**/
+!/workshop/data/**/README.md
+!/workshop/data/**/LICENSE*
+!/workshop/data/**/provenance.json
+
+# Text datasets, raw downloads, app imports, and data-filled handouts.
+/workshop/part1/raw/
+/workshop/part1/data/*
+!/workshop/part1/data/source_manifest.json
+!/workshop/part1/data/provenance.jsonl
+
+# Local instructor annotations and their generator, which embeds source excerpts.
+/workshop/part1/instructor/*.jsonl
+/workshop/part1/instructor/make_key.py
+
+# Generated analysis tables, images, and execution reports.
+outputs/
+results/
+previews/
+verification/
+
+# The workshop archive bundles datasets.
+/faculty_ai_workshop.zip
+
+# Python environments, caches, and notebook checkpoints.
+.venv/
+venv/
+.cache/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local credentials and operating-system files.
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Ignore rules do not remove files that Git already tracks or stores in history.
