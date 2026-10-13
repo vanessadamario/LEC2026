@@ -1,0 +1,16 @@
+{
+  "dataset": "CCHDO GO-SHIP CTD data, P02W 2022, cruise 33RR20220430",
+  "cruise_url": "https://cchdo.ucsd.edu/cruise/33RR20220430",
+  "metadata_url": "https://data.pmel.noaa.gov/generic/erddap/info/cchdo_ctd/index.html",
+  "download_url": "https://data.pmel.noaa.gov/generic/erddap/tabledap/cchdo_ctd.csv?expocode,station,cast,profile_id,time,latitude,longitude,pressure,ctd_temperature,ctd_temperature_qc,ctd_salinity,ctd_salinity_qc&expocode=%2233RR20220430%22&station=~%223%7C50%7C100%22&cast=1&pressure%3C=600",
+  "accessed_date": "2026-10-13",
+  "license": "CC0-1.0 as declared by NOAA PMEL ERDDAP metadata",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "credit": "CCHDO, GO-SHIP P02W investigators, NOAA PMEL ERDDAP; R/V Roger Revelle, Alison Macdonald and Shuwen Tan",
+  "original_file_sha256": "8edc63a57d031cff681540033ff3efb29fca727f01504db880adb6f8f49450ea",
+  "file_bytes": 83028,
+  "row_count_excluding_units": 682,
+  "transformation": "Projection to 12 variables; stations 3, 50, 100, cast1; pressure<=600 dbar. ERDDAP CSV retained verbatim, including units row. No invented observations.",
+  "quality_control": "Notebook core retains both temperature and salinity WOCE CTD QC flag2 (acceptable); flag6 rows interpolated over>2dbar are reported and excluded.",
+  "caveat": "Station3 ends158dbar; stations50/100600dbar. Casts were sampled at different locations and dates."
+}

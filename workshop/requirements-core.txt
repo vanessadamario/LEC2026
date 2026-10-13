@@ -1,0 +1,8 @@
+# Python 3.10+; instructor/classroom preparation.
+numpy>=1.24,<3
+pandas>=1.5,<4
+matplotlib>=3.7,<4
+scipy>=1.10,<2
+scikit-image>=0.22,<0.27
+ipywidgets>=8,<9
+requests>=2.31,<3

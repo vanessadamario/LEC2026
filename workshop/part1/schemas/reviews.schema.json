@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "reviews workshop annotation",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "sentiment": {
+      "type": "string",
+      "enum": [
+        "positive",
+        "negative",
+        "mixed",
+        "neutral",
+        "unclear"
+      ]
+    },
+    "target": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aspects": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "functionality",
+          "sound",
+          "battery",
+          "comfort",
+          "value",
+          "food",
+          "service",
+          "ambience",
+          "other",
+          "unspecified"
+        ]
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "recommendation": {
+      "type": "string",
+      "enum": [
+        "recommend",
+        "avoid",
+        "not_stated"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "id",
+    "sentiment",
+    "target",
+    "aspects",
+    "recommendation",
+    "evidence"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "execution": "All eight code cells executed directly in Python 3.11.6; root will separately perform nbclient kernel execution.",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2"
+  },
+  "source_rows": 682,
+  "accepted_rows": 679,
+  "qc_exclusions": 3,
+  "temperature_band_difference_C": {
+    "3": -4.194819,
+    "50": -3.672478,
+    "100": -4.324587
+  },
+  "checks": [
+    "Snapshot SHA256 matches",
+    "Both source QC columns enforced",
+    "Common comparison pressure bands covered",
+    "Incomplete 500\u2013600dbar band returns unavailable/zero samples",
+    "Invalid band bounds rejected",
+    "Widget function also runs directly with QC6/salinity/smoothing/shallow coverage"
+  ],
+  "visual_qa": "Opened temperature_salinity_profiles.png: readable axes/units, correct inverted pressure direction, three colored casts and date legend, no clipping.",
+  "frontend_limit": "The interactive controls were instantiated and callback executed; actual CloudBank JupyterHub browser interaction requires facilitator rehearsal."
+}

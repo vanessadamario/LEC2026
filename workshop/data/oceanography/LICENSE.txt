@@ -1,0 +1,6 @@
+Data license: CC0-1.0
+https://creativecommons.org/publicdomain/zero/1.0/
+
+NOAA PMEL ERDDAP declares CC0-1.0 for dataset cchdo_ctd.
+Metadata: https://data.pmel.noaa.gov/generic/erddap/info/cchdo_ctd/index.html
+Retain scientific attribution to CCHDO / GO-SHIP P02W and the cruise investigators.

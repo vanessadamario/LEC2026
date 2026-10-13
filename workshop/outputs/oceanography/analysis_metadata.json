@@ -1,0 +1,22 @@
+{
+  "source_url": "https://data.pmel.noaa.gov/generic/erddap/tabledap/cchdo_ctd.csv?expocode,station,cast,profile_id,time,latitude,longitude,pressure,ctd_temperature,ctd_temperature_qc,ctd_salinity,ctd_salinity_qc&expocode=%2233RR20220430%22&station=~%223%7C50%7C100%22&cast=1&pressure%3C=600",
+  "cruise_url": "https://cchdo.ucsd.edu/cruise/33RR20220430",
+  "source_sha256": "8edc63a57d031cff681540033ff3efb29fca727f01504db880adb6f8f49450ea",
+  "source_rows": 682,
+  "accepted_rows": 679,
+  "qc_policy": "Temperature and salinity WOCE CTD flag 2 only, finite values and broad range checks",
+  "pressure_unit": "dbar; measured pressure, not derived depth",
+  "temperature_scale": "ITS-90 degrees Celsius, in-situ",
+  "salinity_scale": "PSS-78 practical salinity, dimensionless",
+  "comparison_bands_dbar": {
+    "upper": [
+      2,
+      50
+    ],
+    "lower": [
+      100,
+      150
+    ]
+  },
+  "limitations": "Different locations and dates, one cast per station, incomplete vertical coverage; no long-term trend inference"
+}

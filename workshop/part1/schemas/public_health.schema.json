@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "public_health workshop annotation",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "product": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hazard_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "biological",
+          "undeclared_allergen",
+          "foreign_material",
+          "chemical",
+          "labeling_other",
+          "process_hygiene",
+          "other",
+          "unknown"
+        ]
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "hazards": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "hazard_assertion": {
+      "type": "string",
+      "enum": [
+        "reported_present",
+        "potential",
+        "mixed",
+        "unspecified"
+      ]
+    },
+    "illness_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "recommended_action": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "id",
+    "product",
+    "hazard_types",
+    "hazards",
+    "hazard_assertion",
+    "illness_count",
+    "recommended_action",
+    "evidence"
+  ],
+  "additionalProperties": false
+}

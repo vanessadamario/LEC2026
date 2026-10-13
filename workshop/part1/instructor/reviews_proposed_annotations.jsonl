@@ -1,0 +1,6 @@
+{"id": "rev03", "sentiment": "positive", "target": "mic", "aspects": ["sound"], "recommendation": "not_stated", "evidence": ["mic is great"]}
+{"id": "rev07", "sentiment": "positive", "target": null, "aspects": ["unspecified"], "recommendation": "recommend", "evidence": ["Highly recommend"]}
+{"id": "rev10", "sentiment": "mixed", "target": "phone", "aspects": ["functionality"], "recommendation": "not_stated", "evidence": ["simple little phone to use", "breakage is unacceptible"]}
+{"id": "rev12", "sentiment": "negative", "target": "Crust", "aspects": ["food"], "recommendation": "not_stated", "evidence": ["Crust is not good."]}
+{"id": "rev13", "sentiment": "positive", "target": "menu", "aspects": ["food", "value"], "recommendation": "not_stated", "evidence": ["selection on the menu was great", "so were the prices"]}
+{"id": "rev20", "sentiment": "negative", "target": "food", "aspects": ["food", "service"], "recommendation": "not_stated", "evidence": ["Took an hour to get our food", "my food was Luke warm", "Our sever was running around like he was totally overwhelmed"]}

@@ -1,0 +1,6 @@
+# Optional third demo; not needed for the three science notebooks.
+-r requirements-core.txt
+transformers>=4.45,<5
+torch>=2.2,<3
+huggingface-hub>=0.25,<1
+gradio-client>=1.3,<3

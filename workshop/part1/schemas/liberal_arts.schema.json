@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "liberal_arts workshop annotation",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "grammatical_person": {
+      "type": "string",
+      "enum": [
+        "first",
+        "second",
+        "third",
+        "multiple",
+        "undetermined"
+      ]
+    },
+    "imagery": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "nature",
+          "body",
+          "religion",
+          "war",
+          "commerce",
+          "domestic",
+          "arts_reading",
+          "other",
+          "none"
+        ]
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "proposed_theme": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "theme_evidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alternative_reading": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "context_limit": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "id",
+    "grammatical_person",
+    "imagery",
+    "proposed_theme",
+    "theme_evidence",
+    "alternative_reading",
+    "context_limit",
+    "evidence"
+  ],
+  "additionalProperties": false
+}
