@@ -13,6 +13,18 @@ Start with [SESSION_GUIDE.md](SESSION_GUIDE.md) for the agenda, dataset choices,
 
 The three science notebooks use bundled real data. Keep the folder structure when distributing the materials. Their analyses do not require an AI API key or GPU. The optional Hugging Face notebook downloads model weights on its first run unless the classroom cache is prepared; its remote Space call is disabled by default.
 
+## Anaconda environment
+
+From the repository root, create an environment covering all four notebooks and register its Jupyter kernel:
+
+```bash
+conda env create -f environment.yml
+conda activate lec2026-ai
+python -m ipykernel install --user --name lec2026-ai --display-name "Python (LEC2026 AI)"
+```
+
+Choose **Python (LEC2026 AI)** in the notebook kernel menu. See [ANACONDA_SETUP.md](ANACONDA_SETUP.md) for the complete installation, launch, update, and CloudBank instructions. Dependencies are declared in [environment.yml](../environment.yml).
+
 ## CloudBank delivery
 
 Upload and extract the complete workshop ZIP into participants' persistent JupyterHub storage, or distribute the folder through your established classroom repository/nbgitpuller workflow. Open `workshop/notebooks/` and select a Python 3.10+ kernel. CloudBank Classroom is a JupyterHub service; your specific environment and allocation determine available packages and resources. [CloudBank's official guide](https://www.cloudbank.org/training/access-cloudbank-classroom).

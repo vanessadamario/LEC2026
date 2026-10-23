@@ -10,6 +10,8 @@ Choose a Python 3.10+ kernel. The three science demos run on CPU, with small bun
 
 ## Prepare packages before the session
 
+For a classroom image that supports conda environments, use [ANACONDA_SETUP.md](ANACONDA_SETUP.md) to create the complete environment from the repository's `environment.yml` and register **Python (LEC2026 AI)** as a kernel. The environment covers all four notebooks, including the Hugging Face demo. The pip instructions below are an alternative for an existing classroom Python kernel.
+
 Ask the classroom administrator to include the core packages in the course environment, or, if notebook package installs are permitted, use an instructor setup notebook:
 
 ```python
