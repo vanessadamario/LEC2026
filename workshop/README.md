@@ -13,6 +13,10 @@ Start with [SESSION_GUIDE.md](SESSION_GUIDE.md) for the agenda, dataset choices,
 
 The three science notebooks use bundled real data. Keep the folder structure when distributing the materials. Their analyses do not require an AI API key or GPU. The optional Hugging Face notebook downloads model weights on its first run unless the classroom cache is prepared; its remote Space call is disabled by default.
 
+For a detailed description of the oceanographic dataset, data dictionary, analysis goals, and limitations, see the [Overleaf-ready report](reports/oceanography_dataset_report.tex) and [PDF preview](reports/oceanography_dataset_report.pdf).
+
+For an illustrated explanation of every microscopy processing step, see the [microscopy report PDF](reports/microscopy_analysis_report.pdf) and [Overleaf source-and-figures ZIP](reports/microscopy_overleaf.zip).
+
 ## Anaconda environment
 
 From the repository root, create an environment covering all four notebooks and register its Jupyter kernel:
