@@ -1,20 +1,20 @@
-# From AI Idea to AI Infrastructure
+# **From AI Idea to AI Infrastructure**
 
-Materials for Vanessa D’Amario’s 90-minute LEC 2026 faculty session, following the presentation from AI ideas and NAIRR resources to no-code workflows, CloudBank notebooks, and a project plan.
+90-minute LEC 2026 faculty session, following the presentation from AI ideas and NAIRR resources to no-code workflows, CloudBank notebooks, and a project plan.
 
-## 1. Start with the idea
+## **1. Start with the idea**
 
 Define your teaching or research question, the data you need, and how you will check the result before choosing a model or computing resource.
 
 Resources discussed in the slides: [NAIRR Pilot](https://nairrpilot.org), [ACCESS recorded events and training](https://support.access-ci.org/knowledge-base/recorded-events-and-trainings), and [NRP LLM status](https://nrp.ai/llm-status/).
 
-## 2. No-code: compare models and extract structured information
+## **2. No-code: compare models and extract structured information**
 
 Use the same image and rubric across models, then inspect the evidence behind each answer. The [visual-framing prompt](workshop/part1/prompts/visual_framing.md) supports the presentation’s image-analysis example in Langflow. It turns visible cues into a JSON record; human review checks whether those cues support the assigned fields.
 
 The draft slides remain local until they are ready to publish.
 
-## 3. Basic coding: explore and modify a disciplinary tool
+## **3. Basic coding: explore and modify a disciplinary tool**
 
 The two supplied final notebooks are included unchanged, with their saved outputs. Repository filenames and every data/output path inside them are preserved. Lab numbers below follow the presentation.
 
@@ -27,11 +27,11 @@ Predict a change, adjust one control, inspect the result, and explain what chang
 
 The Airbnb lab and separate GPU rubric notebook shown in the classroom screenshot are existing class materials and are not included here.
 
-### Run on CloudBank
+### **Run on CloudBank**
 
 Use your existing classroom environment and folder layout. [CloudBank instructions](workshop/CLOUDBANK_SETUP.md) describe the exact supplied paths, package setup, and export locations. Do not move the classroom data folders to match older workshop drafts.
 
-### Run with Anaconda
+### **Run with Anaconda**
 
 From this repository’s root, in Anaconda Prompt or a conda-enabled terminal:
 
@@ -52,14 +52,6 @@ conda env update --name lec2026-ai --file environment.yml
 
 The notebooks download their source data if no recognized local file is present. A first download needs internet access; prepared local data supports offline use. The microscopy setup cell retains the supplied `!pip install -qqq scikit-image` command.
 
-## 4. Turn your idea into a next step
+## **4. Turn your idea into a next step**
 
 Write down your goal, input data, proposed tool, validation method, compute/access needs, and next action. Use those details to plan a classroom adaptation or a resource request.
-
-## What is published
-
-Git tracks only this guide, the environment and CloudBank instructions, the visual-framing prompt, the two final notebooks, and their two PDFs. Raw datasets, generated exports, other notebooks, draft slides, LaTeX sources, and build tools stay local. Saved plots and small preview tables remain inside the final notebooks.
-
-The PDFs were checked against the supplied notebooks and updated for their CloudBank paths and saved results. The notebooks were not rerun during this update; live classroom controls remain for you to test.
-
-The ignore rules limit future commits. Earlier Git history still contains previously committed datasets and workshop files; that history has not been rewritten.

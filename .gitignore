@@ -7,6 +7,7 @@
 !/workshop/
 
 /workshop/*
+!/workshop/README.md
 !/workshop/CLOUDBANK_SETUP.md
 !/workshop/notebooks/
 !/workshop/part1/
