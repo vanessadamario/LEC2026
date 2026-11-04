@@ -1,10 +1,39 @@
-# LEC2026: AI interaction for faculty
+# From AI Idea to AI Infrastructure
 
-A 90-minute workshop with short-text prompt engineering, three scientific analysis notebooks, and a Hugging Face tools demonstration. See the [workshop guide](workshop/SESSION_GUIDE.md) for the agenda and [materials index](workshop/README.md) for the notebooks and prompts.
+Materials for Vanessa D’Amario’s 90-minute LEC 2026 faculty session, following the presentation from AI ideas and NAIRR resources to no-code workflows, CloudBank notebooks, and a project plan.
 
-## Create the Anaconda environment
+## 1. Start with the idea
 
-With Anaconda installed, open Anaconda Prompt on Windows or a conda-enabled terminal on macOS/Linux. Change to this repository's root folder, then run:
+Define your teaching or research question, the data you need, and how you will check the result before choosing a model or computing resource.
+
+Resources discussed in the slides: [NAIRR Pilot](https://nairrpilot.org), [ACCESS recorded events and training](https://support.access-ci.org/knowledge-base/recorded-events-and-trainings), and [NRP LLM status](https://nrp.ai/llm-status/).
+
+## 2. No-code: compare models and extract structured information
+
+Use the same image and rubric across models, then inspect the evidence behind each answer. The [visual-framing prompt](workshop/part1/prompts/visual_framing.md) supports the presentation’s image-analysis example in Langflow. It turns visible cues into a JSON record; human review checks whether those cues support the assigned fields.
+
+The draft slides remain local until they are ready to publish.
+
+## 3. Basic coding: explore and modify a disciplinary tool
+
+The two supplied final notebooks are included unchanged, with their saved outputs. Repository filenames and every data/output path inside them are preserved. Lab numbers below follow the presentation.
+
+| Lab | Notebook | Detailed explanation |
+|---|---|---|
+| LEC-2 · Microscopy: automated segmentation | [Open notebook](workshop/notebooks/03_microscopy.ipynb) | [Illustrated lab PDF](workshop/reports/microscopy_analysis_report.pdf) |
+| LEC-3 · Oceanography: automated analysis | [Open notebook](workshop/notebooks/02_oceanography.ipynb) | [Dataset and analysis PDF](workshop/reports/oceanography_dataset_report.pdf) |
+
+Predict a change, adjust one control, inspect the result, and explain what changed. Then ask an AI assistant for one small modification and check it against the original analysis.
+
+The Airbnb lab and separate GPU rubric notebook shown in the classroom screenshot are existing class materials and are not included here.
+
+### Run on CloudBank
+
+Use your existing classroom environment and folder layout. [CloudBank instructions](workshop/CLOUDBANK_SETUP.md) describe the exact supplied paths, package setup, and export locations. Do not move the classroom data folders to match older workshop drafts.
+
+### Run with Anaconda
+
+From this repository’s root, in Anaconda Prompt or a conda-enabled terminal:
 
 ```bash
 conda env create -f environment.yml
@@ -13,12 +42,24 @@ python -m ipykernel install --user --name lec2026-ai --display-name "Python (LEC
 jupyter lab workshop/notebooks
 ```
 
-In JupyterLab, open a notebook and choose **Python (LEC2026 AI)** as its kernel. The [environment file](environment.yml) includes Python 3.11, JupyterLab, interactive widgets, all scientific notebook dependencies, and the Hugging Face model/client dependencies. The notebooks run on CPU.
+Choose **Python (LEC2026 AI)** as the notebook kernel. Both labs run on CPU. This environment includes the dependencies for these two labs; it does not install a no-code service or an AI model.
 
-For installation, CloudBank Classroom use, updating the environment, and troubleshooting, see [Anaconda setup instructions](workshop/ANACONDA_SETUP.md). These commands are setup instructions; environment installation and notebook testing are left for you to run later.
+To update an existing environment:
 
-## Data
+```bash
+conda env update --name lec2026-ai --file environment.yml
+```
 
-Dataset files, downloaded model caches, generated outputs, and the data-containing workshop ZIP are excluded by [.gitignore](.gitignore). Source/license notes and download metadata remain with the materials. The scientific notebooks have source-download fallbacks when their local data files are absent; the Part 1 text activity uses separate source snapshots described in its [guide](workshop/part1/GUIDE.md).
+The notebooks download their source data if no recognized local file is present. A first download needs internet access; prepared local data supports offline use. The microscopy setup cell retains the supplied `!pip install -qqq scikit-image` command.
 
-Ignore rules do not remove datasets from earlier Git commits. Existing history must be cleaned separately before publishing a repository that excludes those datasets throughout its history.
+## 4. Turn your idea into a next step
+
+Write down your goal, input data, proposed tool, validation method, compute/access needs, and next action. Use those details to plan a classroom adaptation or a resource request.
+
+## What is published
+
+Git tracks only this guide, the environment and CloudBank instructions, the visual-framing prompt, the two final notebooks, and their two PDFs. Raw datasets, generated exports, other notebooks, draft slides, LaTeX sources, and build tools stay local. Saved plots and small preview tables remain inside the final notebooks.
+
+The PDFs were checked against the supplied notebooks and updated for their CloudBank paths and saved results. The notebooks were not rerun during this update; live classroom controls remain for you to test.
+
+The ignore rules limit future commits. Earlier Git history still contains previously committed datasets and workshop files; that history has not been rewritten.
